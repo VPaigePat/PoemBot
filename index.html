@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Prata&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cloud-intro">
+        <div class="cloud">
+          <h1 class="title">PoemBot</h1>
+          <h2 class="topic">
+            Enter a topic and PoemBot will write one out for you
+          </h2>
+          <form id="poem-form-generator">
+            <input
+              type="text"
+              placeholder="Enter the topic"
+              autofocus
+              required
+              autocomplete="off"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit" id="submit" />
+          </form>
+        </div>
+        <div class="answer" id="answer"></div>
+        <footer>
+          This AI project was written by
+          <a href="">Virginia-Paige Patrick</a> and is
+          <a href="">open-sourced in Github</a> and is
+          <a href="">hosted on Netlify</a>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
